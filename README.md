@@ -10,6 +10,10 @@ This one was a request on Reddit and seemed like a fun job, it scans the
 current web page for mailto: links and opens the airmail compose
 dialog - if multiple links are found then a menu will be presented.
 
+## Bypass Paywall
+
+Uses outline.com to bypass paywalls :)
+
 ## Cup of Tea
 
 I use this one a lot, either via Siri or the Shortcuts Widget, to track my
