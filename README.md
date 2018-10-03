@@ -4,6 +4,12 @@ My collection of my iOS shortcuts.
 
 Adds the contents of my clipboard as a new task in my OmniFocus Inbox.
 
+## Airmail
+
+This one was a request on Reddit and seemed like a fun job, it scans the
+current web page for mailto: links and opens the airmail compose
+dialog - if multiple links are found then a menu will be presented.
+
 ## Cup of Tea
 
 I use this one a lot, either via Siri or the Shortcuts Widget, to track my
