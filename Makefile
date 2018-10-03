@@ -10,4 +10,15 @@ build/%.shortcut: src/%.xml
 clean:
 	rm -f build/*.shortcut
 
-.PHONY: clean
+SHELL := zsh
+import:
+	mkdir -p import
+	cp ~/Library/Mobile\ Documents/iCloud~is~workflow~my~workflows/Documents/*.shortcut import/
+	(autoload zmv; cd import; zmv '*.shortcut' '$${(L)f:gs/ /-/}')
+	(autoload zmv; cd import; zmv '*.shortcut' '$${f:gs/:/_/}')
+	(autoload zmv; cd import; zmv '*.shortcut' '$${f:gs/)//}')
+	(autoload zmv; cd import; zmv '*.shortcut' '$${f:gs/(//}')
+	find import -name '*.shortcut' -exec plutil -convert xml1 {} \;
+	(autoload zmv; cd import; zmv -f '*.shortcut' '../src/$${f:r}.xml')
+
+.PHONY: clean import
