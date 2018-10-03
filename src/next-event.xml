@@ -6,13 +6,83 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.getupcomingevents</string>
+			<string>is.workflow.actions.comment</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFCommentActionText</key>
+				<string>https://github.com/wrboyce/ios-shortcuts</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.filter.calendarevents</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>5081F25F-4805-4A1C-A4AD-F9A988BDE05C</string>
-				<key>WFGetUpcomingItemCalendar</key>
-				<string>Personal</string>
+				<string>D05A52EF-362A-4BC4-B69A-3E5277D977EB</string>
+				<key>WFContentItemFilter</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>WFActionParameterFilterPrefix</key>
+						<integer>0</integer>
+						<key>WFActionParameterFilterTemplates</key>
+						<array>
+							<dict>
+								<key>Bounded</key>
+								<true/>
+								<key>Number</key>
+								<integer>24</integer>
+								<key>Operator</key>
+								<integer>1000</integer>
+								<key>Property</key>
+								<string>Start Date</string>
+								<key>Removable</key>
+								<false/>
+								<key>Unit</key>
+								<integer>32</integer>
+								<key>VariableOverrides</key>
+								<dict/>
+							</dict>
+							<dict>
+								<key>Enumeration</key>
+								<string>Personal</string>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>Calendar</string>
+								<key>Removable</key>
+								<true/>
+								<key>VariableOverrides</key>
+								<dict/>
+							</dict>
+							<dict>
+								<key>Enumeration</key>
+								<string>Family</string>
+								<key>Operator</key>
+								<integer>4</integer>
+								<key>Property</key>
+								<string>Calendar</string>
+								<key>Removable</key>
+								<true/>
+								<key>VariableOverrides</key>
+								<dict/>
+							</dict>
+						</array>
+						<key>WFContentPredicateBoundedDate</key>
+						<false/>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFContentPredicateTableTemplate</string>
+				</dict>
+				<key>WFContentItemLimitEnabled</key>
+				<true/>
+				<key>WFContentItemLimitNumber</key>
+				<real>1</real>
+				<key>WFContentItemSortOrder</key>
+				<string>Oldest First</string>
+				<key>WFContentItemSortProperty</key>
+				<string>Start Date</string>
 			</dict>
 		</dict>
 		<dict>
@@ -28,32 +98,155 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.setvariable</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>WFVariableName</key>
-				<string>Event Location</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.properties.locations</string>
+			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>C945B166-FBAC-447A-A445-256C41103E75</string>
-				<key>WFContentItemPropertyName</key>
-				<string>City</string>
+				<string>66F379B1-C01F-4A08-8315-48C3985EA6C5</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.setvariable</string>
+			<string>is.workflow.actions.conditional</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>WFVariableName</key>
-				<string>Event Location City</string>
+				<key>GroupingIdentifier</key>
+				<string>391734A2-1029-4877-BB1E-123F9C1786F8</string>
+				<key>WFCondition</key>
+				<string>Equals</string>
+				<key>WFConditionalActionString</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>CoercionItemClass</key>
+										<string>WFLocationContentItem</string>
+										<key>Type</key>
+										<string>WFCoercionVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Details of Calendar Events</string>
+								<key>OutputUUID</key>
+								<string>F64770C9-72FE-493E-9C15-D85CB670C914</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
 			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFVariable</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Calendar Events</string>
+						<key>OutputUUID</key>
+						<string>D05A52EF-362A-4BC4-B69A-3E5277D977EB</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.properties.calendarevents</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>648F4B71-71D4-419F-94AD-ECCBBEE779E4</string>
+				<key>WFContentItemPropertyName</key>
+				<string>Title</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.alert</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFAlertActionCancelButtonShown</key>
+				<false/>
+				<key>WFAlertActionMessage</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{12, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Details of Calendar Events</string>
+								<key>OutputUUID</key>
+								<string>648F4B71-71D4-419F-94AD-ECCBBEE779E4</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>Next event "￼" has no location.</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.exit</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>391734A2-1029-4877-BB1E-123F9C1786F8</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>391734A2-1029-4877-BB1E-123F9C1786F8</string>
+				<key>UUID</key>
+				<string>D1BB91C1-2D60-49EC-AE42-656FCCA17240</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.handoff</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict/>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
@@ -62,26 +255,6 @@
 			<dict>
 				<key>UUID</key>
 				<string>22D88BCD-0A79-4478-A557-A398A323B30A</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.properties.locations</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>97649178-8936-4E07-AE62-1FDA171A8547</string>
-				<key>WFContentItemPropertyName</key>
-				<string>City</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.setvariable</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>WFVariableName</key>
-				<string>Current City</string>
 			</dict>
 		</dict>
 		<dict>
@@ -113,10 +286,23 @@
 				<dict>
 					<key>Value</key>
 					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>PropertyName</key>
+								<string>City</string>
+								<key>PropertyUserInfo</key>
+								<string>city</string>
+								<key>Type</key>
+								<string>WFPropertyVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Current Location</string>
+						<key>OutputUUID</key>
+						<string>22D88BCD-0A79-4478-A557-A398A323B30A</string>
 						<key>Type</key>
-						<string>Variable</string>
-						<key>VariableName</key>
-						<string>Current City</string>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -140,10 +326,29 @@
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>CoercionItemClass</key>
+										<string>WFLocationContentItem</string>
+										<key>Type</key>
+										<string>WFCoercionVariableAggrandizement</string>
+									</dict>
+									<dict>
+										<key>PropertyName</key>
+										<string>City</string>
+										<key>PropertyUserInfo</key>
+										<string>city</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Details of Calendar Events</string>
+								<key>OutputUUID</key>
+								<string>F64770C9-72FE-493E-9C15-D85CB670C914</string>
 								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Event Location City</string>
+								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -164,7 +369,7 @@
 				<key>UUID</key>
 				<string>E0E6F16C-4235-48BC-A280-A14208EF0603</string>
 				<key>WFTextActionText</key>
-				<string>Barcelona,Manchester,London</string>
+				<string>Manchester,Birmingham,London,Amsterdam,Brussels,Paris,Cologne,Hamburg,Copenhagen,Lyon,Berlin,Milan,Barcelona,Stockholm,Madrid,Rome,Lisbon,St. Petersburg,Moscow,Istanbul,Montreal,Boston,New York,Toronto,Philadelphia,Baltimore,Chicago,Vancouver,Seattle,San Francisco,Los Angeles,Mexico,Seoul,Tokyo,São Paulo,Hong Kong,Singapore,Melbourne,Sydney</string>
 			</dict>
 		</dict>
 		<dict>
@@ -184,10 +389,29 @@
 						<dict>
 							<key>{0, 1}</key>
 							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>CoercionItemClass</key>
+										<string>WFLocationContentItem</string>
+										<key>Type</key>
+										<string>WFCoercionVariableAggrandizement</string>
+									</dict>
+									<dict>
+										<key>PropertyName</key>
+										<string>City</string>
+										<key>PropertyUserInfo</key>
+										<string>city</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
+								<key>OutputName</key>
+								<string>Details of Calendar Events</string>
+								<key>OutputUUID</key>
+								<string>F64770C9-72FE-493E-9C15-D85CB670C914</string>
 								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Event Location City</string>
+								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -309,10 +533,21 @@
 				<dict>
 					<key>Value</key>
 					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFLocationContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Details of Calendar Events</string>
+						<key>OutputUUID</key>
+						<string>F64770C9-72FE-493E-9C15-D85CB670C914</string>
 						<key>Type</key>
-						<string>Variable</string>
-						<key>VariableName</key>
-						<string>Event Location</string>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -360,25 +595,35 @@
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{0, 1}</key>
+							<key>{28, 1}</key>
 							<dict>
+								<key>Aggrandizements</key>
+								<array>
+									<dict>
+										<key>CoercionItemClass</key>
+										<string>WFLocationContentItem</string>
+										<key>Type</key>
+										<string>WFCoercionVariableAggrandizement</string>
+									</dict>
+									<dict>
+										<key>PropertyName</key>
+										<string>City</string>
+										<key>PropertyUserInfo</key>
+										<string>city</string>
+										<key>Type</key>
+										<string>WFPropertyVariableAggrandizement</string>
+									</dict>
+								</array>
 								<key>OutputName</key>
-								<string>Current Location</string>
+								<string>Details of Calendar Events</string>
 								<key>OutputUUID</key>
-								<string>22D88BCD-0A79-4478-A557-A398A323B30A</string>
+								<string>F64770C9-72FE-493E-9C15-D85CB670C914</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
-							<key>{30, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>Event Location City</string>
-							</dict>
 						</dict>
 						<key>string</key>
-						<string>￼:Your next appointment is in ￼, how do you want to get there? </string>
+						<string>Your next appointment is in ￼, how do you want to get there? </string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -407,10 +652,21 @@
 				<dict>
 					<key>Value</key>
 					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFLocationContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Details of Calendar Events</string>
+						<key>OutputUUID</key>
+						<string>F64770C9-72FE-493E-9C15-D85CB670C914</string>
 						<key>Type</key>
-						<string>Variable</string>
-						<key>VariableName</key>
-						<string>Event Location</string>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -448,10 +704,12 @@
 				<dict>
 					<key>Value</key>
 					<dict>
+						<key>OutputName</key>
+						<string>Details of Calendar Events</string>
+						<key>OutputUUID</key>
+						<string>F64770C9-72FE-493E-9C15-D85CB670C914</string>
 						<key>Type</key>
-						<string>Variable</string>
-						<key>VariableName</key>
-						<string>Event Location</string>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -489,10 +747,21 @@
 				<dict>
 					<key>Value</key>
 					<dict>
+						<key>Aggrandizements</key>
+						<array>
+							<dict>
+								<key>CoercionItemClass</key>
+								<string>WFLocationContentItem</string>
+								<key>Type</key>
+								<string>WFCoercionVariableAggrandizement</string>
+							</dict>
+						</array>
+						<key>OutputName</key>
+						<string>Details of Calendar Events</string>
+						<key>OutputUUID</key>
+						<string>F64770C9-72FE-493E-9C15-D85CB670C914</string>
 						<key>Type</key>
-						<string>Variable</string>
-						<key>VariableName</key>
-						<string>Event Location</string>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenAttachment</string>
@@ -574,6 +843,7 @@
 	<key>WFWorkflowTypes</key>
 	<array>
 		<string>WatchKit</string>
+		<string>NCWidget</string>
 	</array>
 </dict>
 </plist>
