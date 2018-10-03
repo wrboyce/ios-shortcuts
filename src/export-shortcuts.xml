@@ -8,7 +8,10 @@
 			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getmyworkflows</string>
 			<key>WFWorkflowActionParameters</key>
-			<dict/>
+			<dict>
+				<key>UUID</key>
+				<string>ADA7F795-2087-4D29-AA33-CEBF13038A47</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
@@ -26,8 +29,14 @@
 			<string>is.workflow.actions.documentpicker.save</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
+				<key>UUID</key>
+				<string>792EE1F9-010F-4913-AE00-89F0AA24A9F3</string>
 				<key>WFAskWhereToSave</key>
 				<false/>
+				<key>WFFileDestinationPath</key>
+				<string></string>
+				<key>WFSaveFileOverwrite</key>
+				<true/>
 			</dict>
 		</dict>
 		<dict>
@@ -80,7 +89,6 @@
 	</array>
 	<key>WFWorkflowTypes</key>
 	<array>
-		<string>NCWidget</string>
 		<string>WatchKit</string>
 	</array>
 </dict>
