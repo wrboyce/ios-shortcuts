@@ -20,6 +20,12 @@ I use this one a lot, either via Siri or the Shortcuts Widget, to track my
 caffeine and water consumption from all the brews I drink. Logs 44mg caffine and
 400ml water in Health.
 
+## EmojiDial
+
+Categorised speed dial, presents a list of emojis and labels then searches
+for contacts with the selected emoji in their "notes" field, then offers a
+choice of call/facetime/message.
+
 ## Export Shortcuts
 
 I use this shortcut to get my `.shortcut` files out of the app and into git.
