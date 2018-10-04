@@ -487,7 +487,6 @@ Set an alarm for ￼?</string>
 	<integer>411</integer>
 	<key>WFWorkflowTypes</key>
 	<array>
-		<string>NCWidget</string>
 		<string>WatchKit</string>
 	</array>
 </dict>
