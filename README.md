@@ -52,6 +52,13 @@ to using Apple Maps.
 Opens the Trainline app directly to the "My Tickets" page, saving
 valuable seconds.
 
+## Update Shopping List
+
+Intended to be used via Siri, my hope was to invoke this hands free but
+unfortunately the "Dictate Text" action requires opening the Shortcuts app.
+This shortcut will take a dictated list of items, split it at "and", add each
+item to my "Shopping" reminders list and then confirm how many items were added.
+
 ## Work Alarm
 
 I wrote this one for my partner, who works shifts. It checks a given calendar
