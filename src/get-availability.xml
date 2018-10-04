@@ -6,6 +6,19 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.comment</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFCommentActionText</key>
+				<string>Copyright 2018 Will Boyce
+
+Licensed under the Apache License, Version 2.0
+
+https://github.com/wrboyce/ios-shortcuts</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -987,7 +1000,7 @@
 	<array>
 		<dict>
 			<key>ActionIndex</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Category</key>
 			<string>Parameter</string>
 			<key>DefaultValue</key>
@@ -999,7 +1012,7 @@
 		</dict>
 		<dict>
 			<key>ActionIndex</key>
-			<integer>2</integer>
+			<integer>3</integer>
 			<key>Category</key>
 			<string>Parameter</string>
 			<key>DefaultValue</key>

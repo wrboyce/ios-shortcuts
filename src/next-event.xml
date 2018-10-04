@@ -10,7 +10,11 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>WFCommentActionText</key>
-				<string>https://github.com/wrboyce/ios-shortcuts</string>
+				<string>Copyright 2018 Will Boyce
+
+Licensed under the Apache License, Version 2.0
+
+https://github.com/wrboyce/ios-shortcuts</string>
 			</dict>
 		</dict>
 		<dict>
