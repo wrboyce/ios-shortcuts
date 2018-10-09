@@ -58,6 +58,15 @@ Get directions to next event. If you and the event are in the same city, and
 that city is supported by CityMapper, then use CityMapper - otherwise fallback
 to using Apple Maps.
 
+## Play Favourites
+
+Simple, but really handy - I use this to quickly get some music going if I'm
+walking and don't have time to faff about picking something. Drop me into my
+Favourites Mix with the added spice of Shuffle. Will prompt for Playlist and
+Shuffle preferences on import. (Note: it really seems like Siri should be able
+to do this with "Shuffle Favourites Mix" but she always fails to actually do
+anything.)
+
 ## Train Tickets
 
 Opens the Trainline app directly to the "My Tickets" page, saving
