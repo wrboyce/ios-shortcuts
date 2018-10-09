@@ -36,6 +36,11 @@ Checks your calendars (currently all of them) and builds a list of times you are
 available, copying it into your clipboard. The non-24h version will ask for your
 availability start/end times on import.
 
+## Glass of Water
+
+Nice and simple; logs 250ml water in Health. I mostly invoke this via Siri using
+my watch.
+
 ## Lumos / Nox
 
 Intended to be invoked by Siri, and mostly a bit of a joke, these shortcuts turn

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowActions</key>
+	<array>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.comment</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFCommentActionText</key>
+				<string>Copyright 2018 Will Boyce
+
+Licensed under the Apache License, Version 2.0
+
+https://github.com/wrboyce/ios-shortcuts</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.health.quantity.log</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFQuantitySampleAdditionalQuantity</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Unit</key>
+						<string>mL</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFQuantityFieldValue</string>
+				</dict>
+				<key>WFQuantitySampleDate</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>CurrentDate</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFQuantitySampleQuantity</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Magnitude</key>
+						<string>250</string>
+						<key>Unit</key>
+						<string>mL</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFQuantityFieldValue</string>
+				</dict>
+				<key>WFQuantitySampleType</key>
+				<string>Water</string>
+			</dict>
+		</dict>
+	</array>
+	<key>WFWorkflowClientRelease</key>
+	<string>2.0</string>
+	<key>WFWorkflowClientVersion</key>
+	<string>700</string>
+	<key>WFWorkflowIcon</key>
+	<dict>
+		<key>WFWorkflowIconGlyphNumber</key>
+		<integer>59866</integer>
+		<key>WFWorkflowIconImageData</key>
+		<data>
+		</data>
+		<key>WFWorkflowIconStartColor</key>
+		<integer>463140863</integer>
+	</dict>
+	<key>WFWorkflowImportQuestions</key>
+	<array/>
+	<key>WFWorkflowInputContentItemClasses</key>
+	<array>
+		<string>WFAppStoreAppContentItem</string>
+		<string>WFArticleContentItem</string>
+		<string>WFContactContentItem</string>
+		<string>WFDateContentItem</string>
+		<string>WFEmailAddressContentItem</string>
+		<string>WFGenericFileContentItem</string>
+		<string>WFImageContentItem</string>
+		<string>WFiTunesProductContentItem</string>
+		<string>WFLocationContentItem</string>
+		<string>WFDCMapsLinkContentItem</string>
+		<string>WFAVAssetContentItem</string>
+		<string>WFPDFContentItem</string>
+		<string>WFPhoneNumberContentItem</string>
+		<string>WFRichTextContentItem</string>
+		<string>WFSafariWebPageContentItem</string>
+		<string>WFStringContentItem</string>
+		<string>WFURLContentItem</string>
+	</array>
+	<key>WFWorkflowMinimumClientVersion</key>
+	<integer>411</integer>
+	<key>WFWorkflowTypes</key>
+	<array>
+		<string>NCWidget</string>
+		<string>WatchKit</string>
+	</array>
+</dict>
+</plist>
