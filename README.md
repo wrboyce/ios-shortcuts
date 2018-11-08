@@ -98,7 +98,6 @@ item to my "Shopping" reminders list and then confirm how many items were added.
 ## Work Alarm
 
 I wrote this one for my partner, who works shifts. It checks a given calendar
-(specified on import) for the next shift and sets a reminder for 2h (also
-customisable on import) before the event. Ideally it would set an Alarm but that
-currently isn't possible.
+(specified on import) for the next shift and sets an alarm for 2h (also
+customisable on import) before the event.
 [link](https://github.com/wrboyce/ios-shortcuts/raw/master/build/work-alarm.shortcut)
