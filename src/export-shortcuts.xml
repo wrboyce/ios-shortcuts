@@ -65,9 +65,9 @@ https://github.com/wrboyce/ios-shortcuts</string>
 		</dict>
 	</array>
 	<key>WFWorkflowClientRelease</key>
-	<string>2.0</string>
+	<string>2.1.1</string>
 	<key>WFWorkflowClientVersion</key>
-	<string>700</string>
+	<string>736</string>
 	<key>WFWorkflowIcon</key>
 	<dict>
 		<key>WFWorkflowIconGlyphNumber</key>

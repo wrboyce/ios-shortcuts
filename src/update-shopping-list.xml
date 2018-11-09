@@ -254,9 +254,9 @@ https://github.com/wrboyce/ios-shortcuts</string>
 		</dict>
 	</array>
 	<key>WFWorkflowClientRelease</key>
-	<string>2.0</string>
+	<string>2.1.1</string>
 	<key>WFWorkflowClientVersion</key>
-	<string>700</string>
+	<string>736</string>
 	<key>WFWorkflowIcon</key>
 	<dict>
 		<key>WFWorkflowIconGlyphNumber</key>
@@ -268,7 +268,18 @@ https://github.com/wrboyce/ios-shortcuts</string>
 		<integer>3980825855</integer>
 	</dict>
 	<key>WFWorkflowImportQuestions</key>
-	<array/>
+	<array>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>6</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>WFCalendarItemCalendar</string>
+			<key>Text</key>
+			<string>Which Reminders list should be used for Shopping?</string>
+		</dict>
+	</array>
 	<key>WFWorkflowInputContentItemClasses</key>
 	<array>
 		<string>WFAppStoreAppContentItem</string>
